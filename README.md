@@ -1,12 +1,13 @@
-## Luis Fidel Castellanos Diaz
+# Luis Fidel Castellanos Diaz
 
-Independent software assurance and security research focused on legacy
-systems, cryptographic integrity, forensic analysis, and reproducible
-technical evidence.
+Applied cryptography and systems engineering research across FreeBSD, Rust, and COBOL
+ecosystems — compilation context security, cryptographic integrity, and crypto agility
+for critical infrastructure. Every claim backed by a reproducible artifact —
+hexdump -C, not visual render.
 
 ---
 
-### Active Projects
+## Active Projects
 
 | Repository | Description |
 |---|---|
@@ -14,26 +15,33 @@ technical evidence.
 | [vtr-forensic-img](https://github.com/LuisCastellanos-dev/vtr-forensic-img) | Hybrid Rust+Python forensic image analysis — binary parsing, chain of custody, adversarial test suite |
 | [cryptofault](https://github.com/LuisCastellanos-dev/cryptofault) | Passive PCAP and certificate analysis for OT/ICS — TLS version detection, weak keys, plaintext sessions |
 | [cfg-shield](https://github.com/LuisCastellanos-dev/cfg-shield) | Feature flag semantic drift detector for Rust — confirmed against generic-ecies |
+| [vtr-sentinel-kmod](https://github.com/LuisCastellanos-dev/vtr-sentinel-kmod) | FreeBSD 14 kernel module for OT/ICS security telemetry — Phase 3 confirmed, reproducible build under R-09 |
+| [vtr-methodology](https://github.com/LuisCastellanos-dev/vtr-methodology) | VTR-DEV-001 and VTR-COMP-001 — artifact production and compilation context methodology, CC BY 4.0 |
 
 ---
 
-### Upstream Contributions
+## Upstream Contributions
 
-- **FreeBSD** — crp/mbuf/refcount leak fix in `sys/net/if_ovpn.c` — [rGa841961da752](https://cgit.freebsd.org/src/commit/?id=a841961da752) — merged by kp (Kristof Provost)
+- **FreeBSD** — crp/mbuf/refcount leak fix in `sys/net/if_ovpn.c` — [rGa841961da752](https://cgit.freebsd.org/src/commit/?id=rGa841961da752) — merged by kp (Kristof Provost)
+- **FreeBSD** — `sa_len` validation before `bcopy`/`memcpy` in 5 `sys/net/` interfaces — [D59140](https://reviews.freebsd.org/D59140) — open, under review
 - **RustCrypto/crypto-bigint** — documentation clarification for `xgcd_vartime` delegation — [PR #1333](https://github.com/RustCrypto/crypto-bigint/pull/1333)
-- **IBM/Bank-of-Z** — copy-paste defect in ABND-TIME seconds field across 23 CICS programs — [PR #210](https://github.com/IBM/Bank-of-Z/pull/210) open, linked to [issue #205](https://github.com/IBM/Bank-of-Z/issues/205)
-- **generic-ecies** — SharedInfo1/2 analysis per SEC 1 v2.0 §5.1.3 — [issue #2](https://github.com/nickel-lang/generic-ecies/issues/2), PR in preparation
-- **Tailscale** — FreeBSD pkg version mismatch root cause analysis — `tailscale update` reads binary version instead of `pkg query` output, causing repeated daemon restarts on port revisions — [issue #18136](https://github.com/tailscale/tailscale/issues/18136#issuecomment-5360842037)
+- **IBM/Bank-of-Z** — copy-paste defect in ABND-TIME seconds field across 23 CICS programs — [PR #210 merged](https://github.com/IBM/Bank-of-Z/pull/210), closes [Issue #205](https://github.com/IBM/Bank-of-Z/issues/205)
+- **Raspberry Pi Linux** — resource leak and stack overflow in vc04_services (VTR-RPi-001, VTR-RPi-002) — resolved in [PR #7576](https://github.com/raspberrypi/linux/pull/7576)
+- **generic-ecies** — SharedInfo/1,2 analysis per SEC 1 v2.0 §5.1.3 — [Issue #2](https://github.com/LFDT-Lockness/generic-ecies/issues/2), PR in preparation
+- **Tailscale** — FreeBSD port version representation divergence — [Issue #18136](https://github.com/tailscale/tailscale/issues/18136)
+- **Tailscale** — Parrot OS Echo misdetected as debian bullseye in install.sh — [Issue #20960](https://github.com/tailscale/tailscale/issues/20960)
 
 ---
 
-### Published Research
+## Published Research
 
-- *Source Transformation Integrity in Legacy COBOL Systems* — [DOI 10.5281/zenodo.21973424](https://doi.org/10.5281/zenodo.21973424) — Zenodo, 2026, CC BY 4.0
+- *Source Transformation Integrity in Legacy COBOL Systems* — [DOI 10.5281/zenodo.21974261](https://doi.org/10.5281/zenodo.21974261) — Zenodo 2026, CC BY 4.0
+- *Compilation Context as a Security Variable: A Cross-Language Classification Framework* — [DOI 10.5281/zenodo.22063208](https://doi.org/10.5281/zenodo.22063208) — Zenodo 2026, CC BY 4.0
 
 ---
 
-### Methodology
+## Methodology
 
-Each project distinguishes observed facts from inference and projection.
-Security claims require a reproducible artifact — hexdump -C, not visual render.
+Each project distinguishes observed facts from inference and projection under the
+CONFIRMED / PROBABLE / OBSERVED framework. Build reproducibility is verified under
+R-09: source → toolchain → artifact → evidence, with SHA-256 at each boundary.
