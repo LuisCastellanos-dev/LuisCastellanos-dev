@@ -35,6 +35,7 @@ hexdump -C, not visual render.
 
 ## Published Research
 
+- *VTR-FINDINGS-001: Structured Evidence and Validation Contract for OT/ICS Security Findings* — [DOI 10.5281/zenodo.22821614](https://doi.org/10.5281/zenodo.22821614) — Zenodo 2026, MIT
 - *Source Transformation Integrity in Legacy COBOL Systems* — [DOI 10.5281/zenodo.21974261](https://doi.org/10.5281/zenodo.21974261) — Zenodo 2026, CC BY 4.0
 - *Compilation Context as a Security Variable: A Cross-Language Classification Framework* — [DOI 10.5281/zenodo.22063208](https://doi.org/10.5281/zenodo.22063208) — Zenodo 2026, CC BY 4.0
 
