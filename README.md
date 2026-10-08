@@ -15,7 +15,7 @@ hexdump -C, not visual render.
 | [vtr-forensic-img](https://github.com/LuisCastellanos-dev/vtr-forensic-img) | Hybrid Rust+Python forensic image analysis — binary parsing, chain of custody, adversarial test suite |
 | [cryptofault](https://github.com/LuisCastellanos-dev/cryptofault) | Passive PCAP and certificate analysis for OT/ICS — TLS version detection, weak keys, plaintext sessions |
 | [cfg-shield](https://github.com/LuisCastellanos-dev/cfg-shield) | Feature flag semantic drift detector for Rust — confirmed against generic-ecies |
-| [vtr-sentinel-kmod](https://github.com/LuisCastellanos-dev/vtr-sentinel-kmod) | FreeBSD 14 kernel module for OT/ICS security telemetry — Phase 3 confirmed, reproducible build under R-09 |
+| [vtr-sentinel-kmod](https://github.com/LuisCastellanos-dev/vtr-sentinel-kmod) | FreeBSD 14.5 kernel module for OT/ICS security telemetry — Phase 3 confirmed, reproducible build under R-09 |
 | [vtr-methodology](https://github.com/LuisCastellanos-dev/vtr-methodology) | VTR-DEV-001 and VTR-COMP-001 — artifact production and compilation context methodology, CC BY 4.0 |
 
 ---
