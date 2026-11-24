@@ -26,6 +26,7 @@ hexdump -C, not visual render.
 - **FreeBSD** — `MPASS(hlen <= sizeof(dst.sa_data))` assertion in `sys/net/bpf_ifnet.c` — [rG599c3d7d7ae5](https://cgit.freebsd.org/src/commit/?id=rG599c3d7d7ae5) — committed by glebius
 - **RustCrypto/crypto-bigint** — documentation clarification for `xgcd_vartime` delegation — [PR #1333](https://github.com/RustCrypto/crypto-bigint/pull/1333)
 - **IBM/Bank-of-Z** — copy-paste defect in ABND-TIME seconds field across 23 CICS programs — [PR #210 merged](https://github.com/IBM/Bank-of-Z/pull/210), closes [Issue #205](https://github.com/IBM/Bank-of-Z/issues/205)
+- **opensourcecobol4j** — security audit (15 findings), PRs #917–#921 pending upstream review; four fixes ported by the maintainer into Hagane COBOL 2.0.0 (#61 ports the null-byte check only) — [CHANGELOG](https://github.com/yutaro-sakamoto/Hagane-COBOL/blob/main/CHANGELOG.md)
 - **Raspberry Pi Linux** — resource leak and stack overflow in vc04_services (VTR-RPi-001, VTR-RPi-002) — resolved in [PR #7576](https://github.com/raspberrypi/linux/pull/7576)
 - **generic-ecies** — SharedInfo/1,2 analysis per SEC 1 v2.0 §5.1.3 — [Issue #2](https://github.com/LFDT-Lockness/generic-ecies/issues/2), PR in preparation
 - **Tailscale** — FreeBSD port version representation divergence — [Issue #18136](https://github.com/tailscale/tailscale/issues/18136)
